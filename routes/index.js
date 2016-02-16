@@ -11,4 +11,8 @@ router.get('/', function(req, res, next) {
       +'/ttt validate -> will vaildate current month and send missing or uncompleted reports');
 });
 
+router.get('/ttt', function(req, res, next) {
+  res.send(req.param('text'));
+});
+
 module.exports = router;
