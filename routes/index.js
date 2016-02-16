@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/ttt', function(req, res, next) {
-    let commands = req.param('text').split(' ');
+    /*let commands = req.param('text').split(' ');*/
   res.send(req.param('team_domain'));
 });
 
