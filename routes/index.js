@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/ttt', function(req, res, next) {
-  res.send('fsdfs');
+  res.send(req.param('text'));
 });
 
 module.exports = router;
